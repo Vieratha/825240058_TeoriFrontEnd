@@ -1,0 +1,122 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f1eb;
+  color: #33251f;
+}
+
+/*Ini bagian CSS untuk merapikan tampilan web*/
+.profile-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.profile-card {
+  width: 100%;
+  max-width: 480px;
+  padding: 40px 32px;
+  background-color: #ffffff;
+  border: 1px solid #e8ded2;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(51, 37, 31, 0.08);
+}
+
+.profile-label {
+  margin: 0 0 14px;
+  color: #8b6048;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.profile-card h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+.profile-divider {
+  width: 56px;
+  height: 4px;
+  margin: 22px 0;
+  background-color: #b78a55;
+  border-radius: 4px;
+}
+
+.profile-nim {
+  margin: 0;
+  font-size: 18px;
+}
+
+.profile-description {
+  margin: 12px 0 0;
+  color: #76665d;
+  font-size: 14px;
+}
+
+@media (max-width: 576px) {
+  .profile-card {
+    padding: 30px 24px;
+  }
+
+  .profile-card h1 {
+    font-size: 26px;
+  }
+}
